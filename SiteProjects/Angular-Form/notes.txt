@@ -1,0 +1,7 @@
+Angular Properties/classes used to classify elements
+$pristine ng-pristine Hasn't been used (typed in)
+$dirty ng-dirty Has been used (typed in)
+$touched ng-touched Has been touched
+$untouched ng-untouched Hasn't been touched (?)
+$valid ng-valid Element is valid
+$invalid ng-invalid Element is invalid(form doesn't meet reqs)

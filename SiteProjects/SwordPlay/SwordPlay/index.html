@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SwordPlay</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="game">
+    <div id="topStats">
+    <!--red Hearts-->
+    <table align="right" width="400px" style="table-layout: fixed">
+        <tr>
+        <td>
+            <img id="topHeart1" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+        </td>
+
+            <td>
+                <img id="topHeart2" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+            <td>
+                <img id="topHeart3" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+            <td>
+                <img id="topHeart4" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+            <td>
+                <img id="topHeart5" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+            <td>
+                <img id="topHeart6" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+            <td>
+                <img id="topHeart7" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+            <td>
+                <img id="topHeart8" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+            <td>
+                <img id="topHeart9" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+            <td>
+                <img id="topHeart10" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+            </td>
+
+        </tr>
+    </table>
+        <!--stamina-->
+
+        <table align="left" width="400px" style="table-layout: fixed">
+            <tr>
+                <td>
+                    <img id="topStam1" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="topStam2" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="topStam3" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="topStam4" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="topStam5" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+            </tr>
+        </table>
+
+
+        <p id="topStam" style="margin-right: 500px; color: black; position:relative; bottom:-14px;"></p>
+        <p id="topHealth" style="margin-left:500px; position:relative; bottom:20px"></p>
+    </div>
+    <br>
+    <div id="topPlayer" onkeypress="checkKey(te)" onkeydown="checkKey(tb)">
+    </div>
+
+    <p id="howToPlay" onclick="daRules()">How to Play</p>
+
+    <div id="botPlayer" onkeypress="checkKey(e)" onkeydown="checkKey(b)" onkeyup="checkKeyUp(ub)">
+        <br>
+    </div>
+    <br>
+    <div id="botStats"><br>
+
+        <!--red Hearts-->
+        <table align="right" width="400px" style="table-layout: fixed">
+            <tr>
+                <td>
+                    <img id="botHeart1" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart2" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart3" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart4" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart5" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+                <td>
+                    <img id="botHeart6" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart7" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart8" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart9" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+                <td>
+                    <img id="botHeart10" class="stats" src="http://orig08.deviantart.net/26e4/f/2014/281/5/9/pixel_heart_by_emeraldplaysmcraft-d81zjcr.png">
+                </td>
+
+            </tr>
+        </table>
+        <!--stamina-->
+
+        <table align="left" width="400px" style="table-layout: fixed">
+            <tr>
+                <td>
+                    <img id="botStam1" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="botStam2" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="botStam3" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="botStam4" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+                <td>
+                    <img id="botStam5" class="stats" src="http://orig04.deviantart.net/8f64/f/2015/125/4/a/chaos_emerald_green_sprite_by_banjo2015-d8sae5s.png">
+                </td>
+
+            </tr>
+        </table>
+
+
+        <p id="botStam" style="margin-right: 500px; color: white; position:relative; bottom:14px;"></p>
+        <p id="botHealth" style="margin-left: 500px; position:relative; bottom:48px; color: white"></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    </div>
+    <div id="rules">
+        <p>&#9650; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; Attack &nbsp;&nbsp;&nbsp;&nbsp; W</p>
+        <p> &#9668; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Parry &nbsp; &nbsp; &nbsp; &nbsp; A </p>
+        <p>&#9660; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Block &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  S</p>
+        <p>&#9658; &nbsp; Power Attack &nbsp; D</p>
+        <p>Shift &nbsp; &nbsp; &nbsp; Back Away &nbsp; &nbsp;  Q</p>
+        <p>Regular attacks use 1 stamina, and deal 1 damage.</p>
+
+        <p id="backToGame" onclick="daGame()">Play &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+        <p>Power attacks use 3 stamina, and deal 3 damage.</p>
+
+        <p>If a hit connects and is blocked, the damage is dealt to stamina instead</p>
+        <p>if an attack is blocked while you have no stamina, you become stunned for 2 seconds</p>
+        <p>Getting hit while stunned deals one extra damage</p>
+        <p>If you parry someone right as they would strike you, you stun them.</p>
+
+        <p>Lastly, don't hold down your keys. Most computers have trouble with that.</p>
+    </div>
+
+<!--<div id="Bryson">-->
+    <!--<p>tony</p>-->
+    <!--<img src="http://vignette2.wikia.nocookie.net/tmnt/images/2/2b/Skateboard.png/revision/latest?cb=20140711165702">-->
+    <!--<button onclick="GoAway()">Go away</button>-->
+<!--</div>-->
+
+<!--<div id="joey">-->
+    <!--<p>joey is awesome yay $$$$$</p>-->
+    <!--<img src="http://vignette2.wikia.nocookie.net/minecraft/images/0/07/Creeper.gif/revision/latest?cb=20131206144222">-->
+<!--</div>-->
+
+</body>
+</html>
+
+<!-- THINGS LEFT
+    Getting hit while charging up a power attack will knock you out of it
+    Back away button
+    Clashing effect
+    Critical Effect
+    Animations
+    Noises
+    !Can't Parry While Blocking
+ -->

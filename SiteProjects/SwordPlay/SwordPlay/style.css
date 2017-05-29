@@ -1,0 +1,96 @@
+body{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/White_grey_checkerboard.svg/1280px-White_grey_checkerboard.svg.png');
+    background-size: 250px;
+}
+
+#howToPlay{
+    background-color: rgba(0,0,0,0.55) ;
+    font: 24px sans-serif;
+    padding: 2px 4px;
+    text-decoration: none;
+    width: 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topStats {
+    background-color: rgba(255, 0, 0, 0.55);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 800px;
+}
+#topPlayer{
+    background-color: rgba(255,0,0,0.55);
+    width: 209px;
+    height:255px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botStats{
+    background-color: rgba(0,0,255,0.55);
+    height: 50px;
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botPlayer{
+    background-color: rgba(0,0,255,0.55);
+    width: 209px;
+    height:255px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;}
+
+#rules{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 800px;
+    background-color: rgba(0,0,0,0.55);
+    display: none;
+    color:white;
+    font: 24px sans-serif;
+    padding: 2px 4px;
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+
+}
+
+#backToGame{
+    background-color: rgba(0,0,0,0.55) ;
+    font: 24px sans-serif;
+    padding: 2px 4px;
+    text-decoration: none;
+    width: 80px;
+    color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.stats{
+    width: 20px;
+    height:20px;
+}
+
+#Bryson{
+    text-align: center;
+    background-color: aqua;
+}
+
+#joey{
+position: relative;
+bottom: 500px;
+
+}

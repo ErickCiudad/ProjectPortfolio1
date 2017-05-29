@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stay Woke</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body onload="main()">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="../res/stay_woke_logo.png" height="80px" width="80px">
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tutorial/index.html">How to play</a></li>
+                <li><a href="../highscores/index.html">High scores</a></li>
+                <li class="active"><a href="../shop/index.html">Shop</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../register/index.html">Register</a></li>
+                <li><a href="../login/index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out" >Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="content">
+    <form method="post" style="color: black">
+        <center>
+            <table border="1px">
+                <tr>
+                    <td width="150px"><center>Extra Lives:$1 4 lives</center></td><td>
+                        <p>Play the game 1 more time before needing to recharge</p><p><?php
+                            </p></td><td width="150px"><center>Skin Tickets:$0.50</center></td>
+                    <td><p>Use them to buy skins in-game to change your character's skin</p><p></p></td>
+                </tr>
+                <tr>
+                    <td width="150px"><center>Mugs:$3.80</center></td><td>
+                        <p>Drink your beverage in a mug with the StayWoke logo</p><p><
+                            <a style='background-color: white; color: lawngreen'>$".number_format($qtyMugs*3.8, 2)."</a>";
+                            }
+                            ?></p></td><td width="150px"><center>T-Shirt:$26.00</center></td>
+                    <td><p>Get a T-Shirt with the StayWoke Logo on it</p><p>
+                            <a style='background-color: white; color: lawngreen'>$".number_format($qtyTShirts*26, 2)."</a>";
+                            }
+                            ?></p></td>
+                </tr>
+                <tr><td colspan="4"><div id="credit card">
+                        <b>Credit Card:</b>
+                        <p>Cardholder Name <input type="text" name="CCname">
+                            Card Number (no dashes): <input type="number" value="0000000000000000" maxlength="16" name="CCnumber"></p>
+                        <p>City: <input type="text" name="CCcity">
+                            State/Province <input type="text" name="CCS/P">
+                            Postal/ZIP code: <input maxlength="9" type="text"  name="CCP/Z">
+                            Country <input name="CCcountry" type="text"></p>
+                        <p>Billing address 1: <input type="text" name="CCBA1">
+                            Billing address 2: <input type="text" name="CCBA2"></p>
+                        <p>Expiration Date: <input type="text" placeholder="MM/YYYY" name="CCED"></p>
+                    </div></td></tr>
+            </table>
+        </center>
+         "<button name='submit'>Submit</button>";
+
+    </form>
+</div>
+<footer>
+    <p style="background-color: black; color: white; text-align: center; font-family: 'OCR A Std'">
+        &copy; Stay Woke 2016
+    </p>
+</footer>
+</body>
+</html>
