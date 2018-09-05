@@ -360,7 +360,7 @@ function botAttack() {
     else {
         botStatus = 'attacking';
         botReplacePic();
-        setTimeout(botPic('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/11/Hugh-Jackman-Angry-Scream-HD-Wallpapers.jpg'),100);
+        setTimeout(botPic('angry-hugh-jackman.jpg'),100);
 
         //launched attack
         botStam -= 1;
@@ -427,7 +427,7 @@ function botChargedUp (){
     }
     botStatus = 'charged';
     botReplacePic();
-    setTimeout(botPic('http://www.etonline.com/news/2015/10/24187336/set_drake_hotling_bling_video-640.jpg'),100);
+    setTimeout(botPic('drake-bling-hotline-02.jpg'),100);
     //Charged up
     setTimeout(botPowerAttack, 500);
 }
@@ -642,7 +642,7 @@ function topAttack() {
     else {
         topStatus = 'attacking';
         topReplacePic();
-        setTimeout(topPic('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/11/Hugh-Jackman-Angry-Scream-HD-Wallpapers.jpg'),100);
+        setTimeout(topPic('angry-hugh-jackman.jpg'),100);
 
         //launched attack
         topStam -= 1;
@@ -700,7 +700,7 @@ function topChargedUp (){
     }
     topStatus = 'charged';
     topReplacePic();
-    setTimeout(topPic('http://www.etonline.com/news/2015/10/24187336/set_drake_hotling_bling_video-640.jpg'),100);
+    setTimeout(topPic('drake-bling-hotline-02.jpg'),100);
     //Charged up
     setTimeout(topPowerAttack, 500);
 }
